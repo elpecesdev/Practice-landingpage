@@ -25,9 +25,16 @@ body{
 .page-logo{
     display: flex;
     align-items: center;
-    color: #F9FAF8;
     font-size: 24px;
-    margin-left: 30px;
+    font-weight: bold;
+    margin-left: 45px;
+    text-shadow: 
+    0 0 8px rgba(110, 231, 183, 0.6), /* Sombra verde suave */
+    0 0 12px rgba(59, 130, 246, 0.6); /* Sombra azul suave */
+    background: linear-gradient(90deg, #6EE7B7, #3B82F6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
 
 .menu{
@@ -39,6 +46,7 @@ body{
     display: flex;
     list-style: none;
     width: 100%;
+    margin-right: 150px;
 }
 
 .ul-menu>li{
@@ -50,11 +58,23 @@ body{
     font-size: 18px;
 }
 
+.ul-menu>li>a:hover{
+    text-shadow: 
+    0 0 8px rgba(110, 231, 183, 0.6), /* Sombra verde suave */
+    0 0 12px rgba(59, 130, 246, 0.6); /* Sombra azul suave */
+    background: linear-gradient(90deg, #6EE7B7, #3B82F6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
 .up-section{
     display: flex;
     flex-direction: row;
     background-color: #1F2937;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
+
 }
 
 .up-container{
@@ -118,4 +138,47 @@ body{
         margin-left: 20px;
         margin-right: 20px;
     }
+}
+
+.down-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.down-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.down-text{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+}
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    align-items: center;
+    width: 100%;
+    margin-top: 50px;
+    gap: 200px;
+
+}
+.gallery{
+    display: flex;
+    padding: 20px;
+    object-fit: cover;
+    border: 4px solid #1F2937;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(31, 41, 55, 0.5);
+    overflow: hidden;
+}
+
+.gallery > img{
+    height: auto;
+    max-width: 200px; /* Establece un ancho máximo */
+    width: 100%;
 }
