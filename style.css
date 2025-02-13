@@ -175,10 +175,68 @@ body{
     border-radius: 12px;
     box-shadow: 0 4px 20px rgba(31, 41, 55, 0.5);
     overflow: hidden;
+    margin-bottom: 40px;
 }
 
 .gallery > img{
     height: auto;
     max-width: 200px; /* Establece un ancho máximo */
     width: 100%;
+}
+
+@media (max-width: 768px) {
+    .gallery-container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+.poem-section{
+    display: flex;
+    background-color: #E5E7EB;
+    width: 100%;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+}
+.quotation-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 830px;
+}
+.poema{
+    color: #1F2947;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: lighter;
+    margin-top: 40px;
+
+}
+
+.firma{
+    display: flex;
+    justify-content: end;
+    width: 100%;
+    color: #1F2947;
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 300;
+    margin-bottom: 40px;
+}
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1F2937;
+    color: #E5E7EB;
+    font-size: 18px;
+    padding: 50px;
+    height: auto;
+
+}
+
+.copyright{
+    display: flex;
+    margin: 0 auto;
 }
